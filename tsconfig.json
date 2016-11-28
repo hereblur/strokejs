@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "dist/lib/",
+        "lib": ["es2015"]
+    },
+    "files": [
+      "lib/main.ts",
+      "lib/Point.ts",
+      "lib/Stroke.ts",
+      "lib/Doodle.ts",
+      "lib/StrokeCompare.ts",
+      "lib/Boundaries.ts",
+      "lib/MathHelper.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/browser",
+        "typings/browser.d.ts"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    },
+    "scripts": {
+      "postbuild": "browserify dist/lib/main.js -s strokejs -t [ babelify --presets [ es2015 ] ] > dist/strokejs.js"
+    }
+}

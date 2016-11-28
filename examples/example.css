@@ -1,0 +1,10 @@
+input.coord{
+  width: 70px;
+  background: #eee;
+  border: none;
+  padding: 2px 4px;
+}
+
+canvas{
+   border:1px solid red;
+}

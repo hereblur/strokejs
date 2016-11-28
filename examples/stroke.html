@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stroke Example</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/bgrins/TinyColor/master/tinycolor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="../dist/strokejs.js"></script>
+    <script src="canvas.js"></script>
+    <script src="stroke.js"></script>
+    <link rel="stylesheet" href="example.css">
+  </head>
+  <body>
+    <div id="box">
+      <h2>Stroke</h2>
+      <br>
+      Draw something!!.<br><br>
+      Simplifly tThreshold:   <input type='number' class='coord' placeholder="X" id="epsilon" value="5" ><br>
+      <button type="button" id='clear'>Clear Stroke</button><br>
+      <button type="button" id='scale'>Scale down to 0.7</button><br>
+      <button type="button" id='dodge'>Dodge</button><br>
+      <canvas id="scene" width="500" height="500"></canvas>
+      <pre id='output'>
+      </pre>
+
+    </div>
+  </body>
+</html>
