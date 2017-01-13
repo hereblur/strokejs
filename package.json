@@ -3,11 +3,22 @@
   "version": "0.0.1",
   "description": "Stroke calculation.",
   "main": "dist/strokejs.js",
-  "types": "./lib/strokejs.d.ts",
-  "scripts": {
-    "test": "jest"
+  "types": "dist/lib/main.d.ts",
+  "typescript": {
+    "definition": "index.d.ts"
   },
-  "author": "",
+  "scripts": {
+    "test": "jest",
+    "preinstall": "npm install autodts",
+    "build": "tsc -p ./lib; ",
+    "postinstall": "autodts link",
+    "prepublish": "tsc && autodts generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hereblur/strokejs.git"
+  },
+  "author": "Supasak Sutha",
   "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
@@ -20,6 +31,7 @@
     "testRegex": "/tests/.*|\\\\.test\\\\.js$"
   },
   "dependencies": {
+    "autodts": "0.0.6",
     "ndollar-js": "0.0.3"
-  },
+  }
 }
