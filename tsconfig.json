@@ -10,13 +10,13 @@
         "lib": ["es2015"]
     },
     "files": [
-      "lib/main.ts",
       "lib/Point.ts",
       "lib/Stroke.ts",
       "lib/Doodle.ts",
       "lib/StrokeCompare.ts",
       "lib/Boundaries.ts",
-      "lib/MathHelper.ts"
+      "lib/MathHelper.ts",
+      "lib/main.ts"
     ],
     "exclude": [
         "node_modules",

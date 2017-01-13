@@ -1,6 +1,6 @@
 {
   "name": "strokejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stroke calculation.",
   "main": "dist/strokejs.js",
   "types": "dist/lib/main.d.ts",
