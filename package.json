@@ -1,8 +1,8 @@
 {
   "name": "strokejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Stroke calculation.",
-  "main": "dist/strokejs.js",
+  "main": "dist/lib/main.js",
   "types": "dist/lib/main.d.ts",
   "typescript": {
     "definition": "index.d.ts"
