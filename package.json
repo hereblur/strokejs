@@ -1,6 +1,6 @@
 {
   "name": "strokejs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stroke calculation.",
   "main": "dist/strokejs.js",
   "types": "dist/lib/main.d.ts",
@@ -12,11 +12,11 @@
     "preinstall": "npm install autodts",
     "build": "tsc -p ./lib; ",
     "postinstall": "autodts link",
-    "prepublish": "tsc && autodts generate"
+    "prepublish": "tsc && browserify dist/lib/main.js -s strokejs -t [ babelify --presets [ es2015 ] ] > dist/strokejs.js && autodts generate"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hereblur/strokejs.git"
+    "url": "https://github.com/hereblur/strokejs"
   },
   "author": "Supasak Sutha",
   "license": "MIT",
